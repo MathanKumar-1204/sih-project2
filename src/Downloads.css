@@ -1,0 +1,54 @@
+/* Button container */
+.b {
+  margin-top: 50px; /* Adjust this margin to suit the position on the page */
+  padding: 20px;
+  text-align: center;
+}
+
+/* General button styling */
+.b button {
+  padding: 14px 30px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: 2px solid transparent; /* Border added */
+  border-radius: 50px; /* More rounded corners for modern design */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2); /* Subtle shadow effect */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover state */
+.b button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3; /* Slight border on hover */
+  box-shadow: 0 8px 16px rgba(0, 86, 179, 0.3); /* Deepen shadow on hover */
+  transform: translateY(-3px); /* Lift on hover */
+}
+
+/* Disabled button styling */
+.b button:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Disabled button hover */
+.b button:disabled:hover {
+  background-color: #cccccc;
+  transform: none; /* No lift effect for disabled buttons */
+  box-shadow: none;
+}
+
+/* Responsive button design for smaller screens */
+@media (max-width: 600px) {
+  .b button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 16px;
+    font-size: 18px;
+  }
+}

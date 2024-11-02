@@ -1,0 +1,133 @@
+
+
+/* Fixed Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #007bff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;  /* Aligns navbar items to the right */
+  padding-right: 20px;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  background-color: #0056b3;
+}
+
+/*LANG*/
+
+ body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;; /* Full viewport height */
+    background-image: linear-gradient(skyblue,white);
+    padding: 20px;
+    width: 700px;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .input-language-box {
+    flex: 1;
+    max-width: 150px; /* Adjusted maximum width */
+    padding: 12px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .language-select {
+    flex: 1;
+    max-width: 200px; /* Adjusted maximum width */
+    padding: 12px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .left, .right {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px; /* Added padding for spacing */
+  }
+  
+  .left {
+    margin-right: 20px; /* Increased margin-right for spacing between boxes */
+  }
+  
+  .input-box, .large-input {
+    width: 100%;
+    padding: 12px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    padding: 12px 20px; /* Increased padding for better button size */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
